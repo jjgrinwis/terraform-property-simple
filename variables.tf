@@ -1,6 +1,7 @@
 variable "group_name" {
   description = "Akamai group to use this resource in"
   type        = string
+  default     = "group-1"
 }
 
 variable "hostname" {
