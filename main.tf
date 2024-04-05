@@ -30,6 +30,8 @@ resource "akamai_property" "aka_property" {
   contract_id = data.akamai_contract.contract.id
   group_id    = data.akamai_contract.contract.group_id
   product_id  = resource.akamai_cp_code.cp_code.product_id
+  rule_format = "latest"
+
 
   # our pretty static hostname configuration so a simple 1:1 between front-end and back-end
   hostnames {
