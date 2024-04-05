@@ -1,7 +1,6 @@
 # This module is oing to be used via Terraform Cloud, so make sure to set credentials in TF cloud.
 # https://techdocs.akamai.com/terraform/docs/environment-variables
 
-provider "akamai" {}
 
 # look all all contractual information
 data "akamai_contract" "contract" {
